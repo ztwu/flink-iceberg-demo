@@ -27,6 +27,7 @@
 	<artifactId>bdp-benchmark-test</artifactId>
 	<properties>
 		<hbase.version>2.0.2</hbase.version>
+		<scope.demo>compile</scope.demo>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -121,14 +122,14 @@
 		<dependency>
 			<groupId>org.apache.flink</groupId>
 			<artifactId>flink-table-planner_${scala.binary.version}</artifactId>
-			<scope>provided</scope>
+			<scope>${scope.demo}</scope>
 		</dependency>
 
 
 		<dependency>
 			<groupId>org.apache.flink</groupId>
 			<artifactId>flink-table-planner-blink_${scala.binary.version}</artifactId>
-			<scope>provided</scope>
+			<scope>${scope.demo}</scope>
 		</dependency>
 
 		<!-- hdfs sink -->

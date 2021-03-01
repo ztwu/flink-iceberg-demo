@@ -75,7 +75,8 @@ public class IcebergReadWriteTest {
     PartitionSpec spec = PartitionSpec.unpartitioned();
 
     // table path
-    String basePath = "hdfs://namenode:9000/";
+    String basePath = "tmp/";
+//    String basePath = "hdfs://namenode:9000/";
 
     String tablePath = basePath.concat("iceberg-table-01");
 
