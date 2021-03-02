@@ -85,7 +85,8 @@ public class IcebergReadWriteTest {
         ImmutableMap.of(TableProperties.DEFAULT_FILE_FORMAT, FileFormat.ORC.name());
 
     // create an iceberg table.
-    Table table = new HadoopTables().create(schema, spec, props, tablePath);
+//    Table table = new HadoopTables().create(schema, spec, props, tablePath);
+    Table table = new HadoopTables().load(tablePath);
 
     TableLoader tableLoader = TableLoader.fromHadoopTable(tablePath);
 
